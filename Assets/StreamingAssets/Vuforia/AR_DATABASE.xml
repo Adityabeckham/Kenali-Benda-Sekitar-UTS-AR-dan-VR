@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+  <Tracking>
+    <ImageTarget name="image-target-2-jamcasio" size="10.000000 12.500000" />
+    <ImageTarget name="image-pokemon-pikachu" size="15.000000 15.000000" />
+  </Tracking>
+</QCARConfig>
