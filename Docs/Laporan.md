@@ -104,9 +104,10 @@ transform.Rotate(Vector3.up, speed * Time.deltaTime, Space.Self);
 ![Play Mode Jam Casio](ss-gameview-jamcasio.png)
 
 ### 4. Teks 3D "Pikachu" / "Casio Watch" di atas model
-![Teks 3D](ss-gameview-tampilkan-info.png)
+![Scene view MainAR](ss-scene-view.png)
 
-### 5. Panel info terbuka setelah klik tombol
+### 5. Panel Tampilkan Info/Sembunyikan Info 
+![Panelinfo](ss-gameview-tampilkan-info.png)
 ![Panel info](ss-gameview-sembunyikaninfo.png)
 
 ### 6. Tampilan di layar HP (setelah build)
