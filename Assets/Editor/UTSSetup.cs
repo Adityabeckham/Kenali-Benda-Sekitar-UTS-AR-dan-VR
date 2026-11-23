@@ -132,8 +132,6 @@ public static class UTSSetup
             Object.DestroyImmediate(child.gameObject);
         }
 
-        var yellow = it2.GetComponent<PikachuYellow>();
-        if (yellow != null) Object.DestroyImmediate(yellow);
         var rot = it2.GetComponent<ObjectRotator>();
         if (rot != null) Object.DestroyImmediate(rot);
 
@@ -358,7 +356,7 @@ public static class UTSSetup
     static void ConfigurePlayerSettings()
     {
         PlayerSettings.companyName = "UTB";
-        PlayerSettings.productName = "AR_NamaMahasiswa_NIM";
+        PlayerSettings.productName = "AR_ADITYA BECKHAM_24552011066";
 
         PlayerSettings.SetApplicationIdentifier(BuildTargetGroup.Android, "com.utb.arnama.nim");
         PlayerSettings.SetApplicationIdentifier(BuildTargetGroup.iOS, "com.utb.arnama.nim");
@@ -371,6 +369,6 @@ public static class UTSSetup
         PlayerSettings.Android.forceSDCardPermission = false;
         PlayerSettings.Android.forceInternetPermission = false;
 
-        Debug.Log("[UTS] Player settings configured (ganti AR_NamaMahasiswa_NIM dengan nama & NIM kamu)");
+        Debug.Log("[UTS] Player settings configured (AR_ADITYA BECKHAM_24552011066)");
     }
 }

@@ -175,8 +175,6 @@ public static class UTSFinalSetup
         foreach (Transform child in it2.transform)
             Object.DestroyImmediate(child.gameObject);
 
-        var yellow = it2.GetComponent<PikachuYellow>();
-        if (yellow != null) Object.DestroyImmediate(yellow);
         var rotOnTarget = it2.GetComponent<ObjectRotator>();
         if (rotOnTarget != null) Object.DestroyImmediate(rotOnTarget);
 
