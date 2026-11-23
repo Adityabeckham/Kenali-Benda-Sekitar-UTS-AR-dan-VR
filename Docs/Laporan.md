@@ -94,14 +94,23 @@ transform.Rotate(Vector3.up, speed * Time.deltaTime, Space.Self);
 
 ## 6. Screenshot
 
-| No  | Bukti                                                           | File screenshot                        |
-| --- | --------------------------------------------------------------- | -------------------------------------- |
-| 1   | Scene view MainAR (2 ImageTarget + Content + Canvas)            | `Docs/ss-scene-view.png`               |
-| 2   | Play Mode: target Pikachu terdeteksi, model tampil & berputar   | `Docs/ss-gameview-pikachu-target.png`  |
-| 3   | Play Mode: target Jam Casio terdeteksi, model tampil & berputar | `Docs/ss-gameview-jamcasio.png`        |
-| 4   | Teks 3D "Pikachu" / "Casio Watch" di atas model                 | `Docs/ss-gameview-tampilkan-info.png`  |
-| 5   | Panel info terbuka setelah klik tombol                          | `Docs/ss-gameview-sembunyikaninfo.png` |
-| 6   | Tampilan di layar HP (setelah build)                            | `AdityaBeckhamAR.apk` (build sukses)   |
+### 1. Scene view MainAR (2 ImageTarget + Content + Canvas)
+![Scene view MainAR](ss-scene-view.png)
+
+### 2. Play Mode: target Pikachu terdeteksi, model tampil & berputar
+![Play Mode Pikachu](ss-gameview-pikachu-target.png)
+
+### 3. Play Mode: target Jam Casio terdeteksi, model tampil & berputar
+![Play Mode Jam Casio](ss-gameview-jamcasio.png)
+
+### 4. Teks 3D "Pikachu" / "Casio Watch" di atas model
+![Teks 3D](ss-gameview-tampilkan-info.png)
+
+### 5. Panel info terbuka setelah klik tombol
+![Panel info](ss-gameview-sembunyikaninfo.png)
+
+### 6. Tampilan di layar HP (setelah build)
+Build berhasil: `AdityaBeckhamAR.apk` (min API 29), diuji di HP Android.
 
 ---
 
