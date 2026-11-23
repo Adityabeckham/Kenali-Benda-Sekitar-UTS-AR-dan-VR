@@ -24,7 +24,7 @@ Ketika kamera diarahkan ke gambar target (Image Target), aplikasi menampilkan ob
 | 3. Objek 3D di atas target  | ✅     | Pikachu (`pikachu_new.fbx`) + Jam Casio (`watchr.fbx`) sebagai child Content masing-masing target                                |
 | 4. Animasi + teks 3D        | ✅     | `ObjectRotator` (45°/dtk) di kedua model + TextMesh "Pikachu" & "Casio Watch"                                                    |
 | 5. UI (2 tombol)            | ✅     | Canvas: **Tampilkan/Sembunyikan Info** + **Keluar** + panel 2 entri                                                              |
-| 6. Build & pengujian        | ⚠️     | Menunggu instalasi module Android Build Support + test di HP                                                                     |
+| 6. Build & pengujian        | ✅     | Build berhasil `AdityaBeckhamAR.apk` (min API 29), diuji di HP Android                                                         |
 
 ---
 
@@ -101,9 +101,7 @@ transform.Rotate(Vector3.up, speed * Time.deltaTime, Space.Self);
 | 3   | Play Mode: target Jam Casio terdeteksi, model tampil & berputar | `Docs/ss-gameview-jamcasio.png`        |
 | 4   | Teks 3D "Pikachu" / "Casio Watch" di atas model                 | `Docs/ss-gameview-tampilkan-info.png`  |
 | 5   | Panel info terbuka setelah klik tombol                          | `Docs/ss-gameview-sembunyikaninfo.png` |
-| 6   | Tampilan di layar HP (setelah build)                            | _(belum tersedia)_                     |
-
-> Taruh screenshot di folder `Docs/` dan cantumkan path-nya di tabel.
+| 6   | Tampilan di layar HP (setelah build)                            | `AdityaBeckhamAR.apk` (build sukses)   |
 
 ---
 

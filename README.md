@@ -57,6 +57,7 @@ Docs/                       # Laporan + screenshot + image target
 - Image target yang digunakan: `image-pokemon-pikachu` (15×15) dan `image-target-2-jamcasio` (10×12.5).
 - `maxSimultaneousImageTargets = 2` — kedua target bisa aktif bersamaan.
 - `Application.Quit()` tidak berfungsi di iOS (aturan Apple) — tombol tetap ada sesuai soal; di Android berfungsi normal.
+- File build Android: `AdityaBeckhamAR.apk` (root project).
 
 ## UTS Requirements (AR & VR — Yayat Sutrayana, S.T., M.Kom.)
 
@@ -69,8 +70,8 @@ Docs/                       # Laporan + screenshot + image target
 | 5. Rotasi otomatis sumbu Y                            | ✅     |
 | 6. Teks 3D di atas model                              | ✅     |
 | 7. Canvas Screen Space + 2 tombol (Keluar + Info)     | ✅     |
-| 8. Build .apk                                         | ✅     |
-| 9. Uji di HP Android                                  | ✅     |
+| 8. Build .apk                                         | ✅     | `AdityaBeckhamAR.apk` (min API 29)   |
+| 9. Uji di HP Android                                  | ✅     | Target terdeteksi, objek berputar, tombol berfungsi |
 
 ---
 

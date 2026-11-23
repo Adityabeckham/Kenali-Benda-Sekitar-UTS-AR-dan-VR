@@ -41,7 +41,7 @@ public static class UTSFinalSetup
             return;
         }
 
-        AssetDatabase.ImportPackage(abs, false);
+        UnityEditor.AssetPackage.Package.Import(abs, false);
         AssetDatabase.Refresh();
         Debug.Log("[UTS] AR_DATABASE package imported");
     }
@@ -129,7 +129,7 @@ public static class UTSFinalSetup
 
     static void SetupSecondTarget()
     {
-        var existing = Object.FindObjectsByType<Vuforia.ImageTargetBehaviour>(FindObjectsSortMode.None)
+        var existing = Object.FindObjectsByType<Vuforia.ImageTargetBehaviour>()
             .FirstOrDefault(t => t.TargetName == SecondTargetName);
         if (existing != null)
         {

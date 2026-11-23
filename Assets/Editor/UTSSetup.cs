@@ -1,6 +1,7 @@
 using System.IO;
 using System.Linq;
 using UnityEditor;
+using UnityEditor.Build;
 using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -77,7 +78,7 @@ public static class UTSSetup
             return;
         }
 
-        var existingNames = Object.FindObjectsByType<Vuforia.ImageTargetBehaviour>(FindObjectsSortMode.None)
+        var existingNames = Object.FindObjectsByType<Vuforia.ImageTargetBehaviour>()
             .Select(t => t.TargetName)
             .ToList();
 
@@ -243,7 +244,7 @@ public static class UTSSetup
         if (ui.infoButtonLabel != null)
             ui.infoButtonLabel.text = "Sembunyikan Info";
 
-        if (Object.FindObjectOfType<EventSystem>() == null)
+         if (Object.FindAnyObjectByType<EventSystem>() == null)
         {
             var esGo = new GameObject("EventSystem");
             esGo.AddComponent<EventSystem>();
@@ -358,13 +359,13 @@ public static class UTSSetup
         PlayerSettings.companyName = "UTB";
         PlayerSettings.productName = "AR_ADITYA BECKHAM_24552011066";
 
-        PlayerSettings.SetApplicationIdentifier(BuildTargetGroup.Android, "com.utb.arnama.nim");
-        PlayerSettings.SetApplicationIdentifier(BuildTargetGroup.iOS, "com.utb.arnama.nim");
+        PlayerSettings.SetApplicationIdentifier(NamedBuildTarget.Android, "com.utb.arnama.nim");
+        PlayerSettings.SetApplicationIdentifier(NamedBuildTarget.FromBuildTargetGroup(BuildTargetGroup.iOS), "com.utb.arnama.nim");
 
         PlayerSettings.iOS.cameraUsageDescription = "Kamera diperlukan untuk fitur Augmented Reality mendeteksi image target.";
         PlayerSettings.iOS.microphoneUsageDescription = "";
 
-        PlayerSettings.Android.minSdkVersion = AndroidSdkVersions.AndroidApiLevel24;
+        PlayerSettings.Android.minSdkVersion = AndroidSdkVersions.AndroidApiLevel29;
         PlayerSettings.Android.targetSdkVersion = AndroidSdkVersions.AndroidApiLevelAuto;
         PlayerSettings.Android.forceSDCardPermission = false;
         PlayerSettings.Android.forceInternetPermission = false;
