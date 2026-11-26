@@ -16,7 +16,11 @@ public class ContentVisibility : MonoBehaviour
                 if (r == null) continue;
                 r.enabled = true;
                 var mat = r.sharedMaterial;
-                if (mat == null || mat.shader == null || mat.shader.name.Contains("Standard"))
+                bool bad = mat == null || mat.shader == null ||
+                    mat.shader.name.Contains("Standard") ||
+                    mat.shader.name.Contains("Error") ||
+                    mat.shader.name.Contains("Hidden");
+                if (bad)
                 {
                     if (sSafeMat == null)
                     {

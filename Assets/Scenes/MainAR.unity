@@ -955,15 +955,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ae871dfcc2c047143907843d8dec6861, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 102.85
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ae871dfcc2c047143907843d8dec6861, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 2.19
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ae871dfcc2c047143907843d8dec6861, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 3.15
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ae871dfcc2c047143907843d8dec6861, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2173,7 +2173,7 @@ MonoBehaviour:
   RuntimeCollider: 0
   mTrackableName: image-pokemon-pikachu
   mInitializedInEditor: 1
-  mDataSetPath: Vuforia/PokemonDatabase.xml
+  mDataSetPath: Vuforia/AR_DATABASE.xml
   mAspectRatio: 1
   mImageTargetType: 0
   mWidth: 15
@@ -2211,7 +2211,7 @@ MonoBehaviour:
   mObserverBehaviour: {fileID: 2067980402}
   mHiddenRoot: {fileID: 0}
   mTargetName: image-pokemon-pikachu
-  mDatasetName: Vuforia/PokemonDatabase.xml
+  mDatasetName: Vuforia/AR_DATABASE.xml
   mCastedBehaviour: {fileID: 2067980402}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
