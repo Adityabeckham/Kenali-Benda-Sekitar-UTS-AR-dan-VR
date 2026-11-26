@@ -7,9 +7,18 @@ public class ContentVisibility : MonoBehaviour
     public void Show()
     {
         if (content == null) return;
-        content.SetActive(true);
-        foreach (var r in content.GetComponentsInChildren<Renderer>(true))
-            r.enabled = true;
+        try
+        {
+            content.SetActive(true);
+            foreach (var r in content.GetComponentsInChildren<Renderer>(true))
+            {
+                if (r != null) r.enabled = true;
+            }
+        }
+        catch (System.Exception e)
+        {
+            Debug.LogError("[ContentVisibility] Show failed: " + e);
+        }
     }
 
     public void Hide()

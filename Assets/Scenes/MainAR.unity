@@ -754,7 +754,7 @@ MonoBehaviour:
   m_Script: {fileID: -1631628248, guid: 8a9a760f95896c34689febc965510927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetBehaviour
-  PreviewVisible: 1
+  PreviewVisible: 0
   RuntimeOcclusion: 0
   RuntimeCollider: 0
   mTrackableName: image-target-2-jamcasio
@@ -955,15 +955,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ae871dfcc2c047143907843d8dec6861, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 102.85
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ae871dfcc2c047143907843d8dec6861, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.19
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ae871dfcc2c047143907843d8dec6861, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.15
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ae871dfcc2c047143907843d8dec6861, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2168,7 +2168,7 @@ MonoBehaviour:
   m_Script: {fileID: -1631628248, guid: 8a9a760f95896c34689febc965510927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetBehaviour
-  PreviewVisible: 1
+  PreviewVisible: 0
   RuntimeOcclusion: 0
   RuntimeCollider: 0
   mTrackableName: image-pokemon-pikachu

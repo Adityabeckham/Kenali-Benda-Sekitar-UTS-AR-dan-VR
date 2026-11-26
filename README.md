@@ -61,8 +61,8 @@ Docs/                       # Laporan + screenshot + image target
 
 ## UTS Requirements (AR & VR — Yayat Sutrayana, S.T., M.Kom.)
 
-| Tugas                                                 | Status |
-| ----------------------------------------------------- | ------ |
+| Tugas                                                 | Status |                                                     |
+| ----------------------------------------------------- | ------ | --------------------------------------------------- |
 | 1. Persiapan Project (Unity 3D + Vuforia + Android)   | ✅     |
 | 2. AR Camera + 2 Image Target                         | ✅     |
 | 3. Objek 3D sebagai child Image Target + proporsional | ✅     |
@@ -70,7 +70,7 @@ Docs/                       # Laporan + screenshot + image target
 | 5. Rotasi otomatis sumbu Y                            | ✅     |
 | 6. Teks 3D di atas model                              | ✅     |
 | 7. Canvas Screen Space + 2 tombol (Keluar + Info)     | ✅     |
-| 8. Build .apk                                         | ✅     | `AdityaBeckhamAR.apk` (min API 29)   |
+| 8. Build .apk                                         | ✅     | `AdityaBeckhamAR.apk` (min API 29)                  |
 | 9. Uji di HP Android                                  | ✅     | Target terdeteksi, objek berputar, tombol berfungsi |
 
 ---
