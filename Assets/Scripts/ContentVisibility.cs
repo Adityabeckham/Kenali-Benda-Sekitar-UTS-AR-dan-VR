@@ -4,6 +4,7 @@ public class ContentVisibility : MonoBehaviour
 {
     public GameObject content;
 
+    static Material sSafeMat;
     public void Show()
     {
         if (content == null) return;
@@ -12,7 +13,18 @@ public class ContentVisibility : MonoBehaviour
             content.SetActive(true);
             foreach (var r in content.GetComponentsInChildren<Renderer>(true))
             {
-                if (r != null) r.enabled = true;
+                if (r == null) continue;
+                r.enabled = true;
+                var mat = r.sharedMaterial;
+                if (mat == null || mat.shader == null || mat.shader.name.Contains("Standard"))
+                {
+                    if (sSafeMat == null)
+                    {
+                        var sh = Shader.Find("Universal Render Pipeline/Lit");
+                        if (sh != null) sSafeMat = new Material(sh);
+                    }
+                    if (sSafeMat != null) r.sharedMaterial = sSafeMat;
+                }
             }
         }
         catch (System.Exception e)
